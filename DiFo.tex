@@ -1,0 +1,183 @@
+\documentclass{scrreprt}
+%[a4paper,12pt]
+%\usepackage[ngerman]{babel}
+%\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{amstext}
+\usepackage{hyperref}
+\usepackage{amsfonts}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{amssymb}
+\usepackage{textcomp}
+\usepackage{microtype}
+\hypersetup{
+  colorlinks=false,
+  linkbordercolor=blue,
+  pdfborderstyle={/S/U/W 0}
+}
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+\title{\textbf{Digital Forensics}}
+\author{\href{https://www.instagram.com/timds21/}{\color{black}Tim Schulze}}
+\date{}
+\begin{document}
+\pagenumbering{gobble}  
+\maketitle
+\pagebreak
+\renewcommand{\contentsname}{Inhaltsverzeichnis}
+\setcounter{tocdepth}{1}
+\tableofcontents
+\addtocontents{toc}{~\hfill\textbf{Seite}\par}
+\pagebreak
+\pagenumbering{arabic}
+\chapter{Computer Crime Scene Investigation}
+\section{Introduction to Digital Forensics}
+Computer forensics, also referred to as computer forensic analysis, electronic discovery, electronic evidence discovery, digital discovery, data recovery, data discovery, computer analysis, and computer examination, is the process of methodically examining computer media (hard disks, diskettes, tapes, etc.) for evidence. A thorough analysis by a skilled examiner can result in the reconstruction of the activities of a computer user.
+\\In other words, Computer forensics is the collection, preservation, analysis, and presentation of computer-related evidence. 
+\\Computer evidence can be useful in criminal cases, civil disputes, and human resources/employment proceedings.
+The process of acquiring, examining, and applying digital evidence is crucialto the success of prosecuting a cyber criminal.
+\begin{itemize}
+\item White Color Crimes (health care fraud, government fraud including erroneous IRS and Social Security benefit payments, and financial institution fraud)
+\item Violent Crimee (child pornography, interstate theft)
+\item Organized Crime (drug dealing, criminal enterprise)
+\end{itemize}
+The objective in computer forensics is to recover, analyze, and present computer-based material in such a way that it is \textbf{useable as evidence in a court of law}. 
+\\Priority: Accuracy $>$ Speed, but efficiently as possible (adhere to stringent guidelines)
+\section{Roles of Computer in a Crime}
+A computer can be:
+\begin{itemize}
+\item the target of the crime (audit logs and unfamiliar programs should be checked)
+\item it can be the instrument of the crime (look for password cracking software and password files)
+\item it can serve as an evidence repository storing valuable information about the crime
+\end{itemize}
+\section{Computer Forensics Specialist(Procedure sequence)}
+\begin{enumerate}
+\item Protect the subject computer system during the forensic examination from any possible alteration, damage, data corruption, or virus introduction
+\item  Discover all files on the subject system. This includes existing normal files, deleted yet remaining files, hidden files, password-protected files, and encrypted files
+\item Recover all (or as much as possible) of discovered deleted files
+\item Reveal (to the extent possible) the contents of hidden files as well as temporary or swap files used by both the application programs and the operating system
+\item Accesses (if possible and if legally appropriate) the contents of protected or encrypted files
+\item Analyze all possibly relevant data found in special areas of a disk
+\item Print out an overall analysis of the subject computer system, as well as a listing of all possibly relevant files and discovered file data. Further, provide an opinion of the system layout; the file structures discovered; any discovered data and authorship information; any attempts to hide, delete, protect, or encrypt information; and anything else that has been discovered and appears to be relevant to the overall computer system examination.
+\item Provide expert consultation and/or testimony
+\end{enumerate}
+\section{Use of Computer Forensic Evidence}
+\begin{itemize}
+\item Criminal Prosecutors(Strafrechtliche Staatsanwälte): homicides, financial fraud, drug and embezzlement record-keeping, and child pornography
+\item Civil litigations(Zivilrechtliche Streitigkeiten): personal and business records on divorce, discrimination, and harassment cases (Insurance companies)
+\item Corporations: sexual harassment, embezzlement, theft or misappropriation of trade secrets, and other internal/confidential information
+\item Law enforcement officials: require assistance in pre-search warrant
+preparations and post-seizure handling of the computer equipment
+\item Individuals: hire computer forensics specialists in support of possible claims of wrongful termination, sexual harassment, or age discrimination (electronic mail systems, on network servers, and on individual employee’s computers)
+\end{itemize}
+\section{Use of Computer Forensics in Law Enforcement}
+If there is a computer on the premises of a crime scene, the chances are very good that
+there is valuable evidence on that computer. If the computer and its contents are examined (even if very briefly) by anyone other than a trained and experienced computer
+forensics specialist, the usefulness and credibility of that evidence will be tainted.
+\\Make sure you find someone who not only has the expertise and experience, but also the ability to stand up to the scrutiny and pressure of cross-examination.
+\subsection{Employer Safeguard Program}
+An unfortunate concern today is the possibility that data could be damaged, destroyed, or misappropriated by a discontented individual Before an individual is informed of their termination, a computer forensic specialist should come on-site and create an exact duplicate of the data on the individual’s computer. In this way, should the employee choose to do anything to that
+data before leaving, the employer is protected.
+\begin{itemize}
+\item What Web sites have been visited
+\item What files have been downloaded
+\item When files were last accessed
+\item Of attempts to conceal or destroy evidence
+\item Of attempts to fabricate evidence
+\item That the electronic copy of a document can contain text that was removed
+from the final printed version
+\item That some fax machines can contain exact duplicates of the last several hundred
+pages received
+\item That faxes sent or received via computer may remain on the computer indefinitely
+\item That email is rapidly becoming the communications medium of choice for
+businesses
+\item That people tend to write things in email that they would never consider writing in a memorandum or letter
+\item That email has been used successfully in criminal cases as well as in civil litigation
+\item That email is often backed up on tapes that are generally kept for months or years
+\item That many people keep their financial records, including investments, on
+computers
+\end{itemize}
+\section{Computer Forensic Services}
+\begin{itemize}
+\item Data seizure(Beschlagnahme)
+\item Data duplication and preservation(Vervielfältigung und Aufbewahrung)
+\item Data recovery
+\item Document searches
+\item Media conversion
+\item Expert witness services
+\\\includegraphics[width=1\textwidth]{"graphics/expertwitnesservices"}
+\\\includegraphics[width=1\textwidth]{"graphics/electronicsurveillance"}
+\item Computer evidence service options
+\begin{itemize}
+\item Standard service
+\item On-site service
+\item Emergency service
+\item Priority service
+\item Weekend service
+\end{itemize}
+\item Other miscellaneous services
+\begin{itemize}
+\item Analysis of computers and data in criminal investigations
+\item On-site seizure of computer data in criminal investigations
+\item Analysis of computers and data in civil litigation.
+\item On-site seizure of computer data in civil litigation
+\item Analysis of company computers to determine employee activity
+\item Assistance in preparing electronic discovery requests
+\item Reporting in a comprehensive and readily understandable manner
+\item Court-recognized computer expert witness testimony
+\item Computer forensics on both PC and Mac platforms
+\item Fast turnaround time
+\end{itemize}
+\end{itemize}
+\section{Problems with Computer Forensic Evidence}
+Computer evidence is like any other evidence. It must be:
+\begin{itemize}
+\item Authentic
+\item Accurate
+\item Complete
+\item Convincing to juries
+\item In conformity with common law and legislative rules (i.e., admissible)
+\\\linebreak There are also special problems:
+\item Computer data changes moment by moment.
+\item Computer data is invisible to the human eye; it can only be viewed indirectly
+after appropriate procedures.
+\item The process of collecting computer data may change it—in significant ways.
+The processes of opening a file or printing it out are not always neutral.
+\item Computer and telecommunications technologies are always changing so that
+forensic processes can seldom be fixed for very long [5].
+\end{itemize}
+\section{The Forensic Technican}
+standard disk repair, network testing
+\begin{itemize}
+\item The scene of crime has to be frozen; that is, the evidence has to be collected as
+early as possible and without any contamination.
+\item There must be continuity of evidence, sometimes known as chain of custody;
+that is, it must be possible to account for all that has happened to the exhibit between its original collection and its appearance in court, preferably unaltered.
+\item All procedures used in examination should be auditable; that is, a suitably qualified independent expert appointed by the other side in a case should be able to
+track all the investigations carried out by the prosecution’s experts [5].
+\end{itemize}
+\textbf{Key features}
+\begin{itemize}
+\item Careful methodology of approach, including record keeping
+\item A sound knowledge of computing, particularly in any specialist areas claimed
+\item A sound knowledge of the law of evidence
+\item A sound knowledge of legal procedures
+\item Access to and skill in the use of appropriate utilities [5]
+\end{itemize}
+\section{Subject Matter of Computer Forensics}
+\begin{itemize}
+\item Authenticity: Does the material come from where it purports?
+\item Reliability: Can the substance of the story the material tells be believed and is
+it consistent? In the case of computer-derived material, are there reasons for
+doubting the correct working of the computer?
+\item Completeness: Is the story that the material purports to tell complete? Are
+there other stories that the material also tells that might have a bearing on the
+legal dispute or hearing
+\item Freedom from interference and contamination: Are these levels acceptable as
+a result of forensic investigation and other post-event handling?
+
+\end{itemize}
+\end{document}
+
+%\includegraphics[width=1\textwidth]{"graphics/"}
