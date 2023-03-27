@@ -177,7 +177,7 @@ legal dispute or hearing
 \item Freedom from interference and contamination: Are these levels acceptable as
 a result of forensic investigation and other post-event handling?
 \end{itemize}
-\subsection{Questions}
+\section{Questions}
 \begin{enumerate}
 \item  Why are information systems (“computer at crime sites”) significant for law enforcement and criminal prosecution? 
 Information systems, including computers, smartphones, and other digital devices, are significant for law enforcement and criminal prosecution because they contain a wealth of information that can be used as evidence in court. Digital evidence can include emails, text messages, social media posts, images, videos, and other types of data that can help investigators build a case against a suspect.
@@ -206,7 +206,65 @@ The main problems, challenges, and limitations of a Forensics examination can in
 
 "Forensics Readiness" refers to the ability of an organization to prepare for and respond to digital incidents or data breaches in a forensically sound manner. To achieve Forensics Readiness, organizations must develop policies and procedures for incident response and data preservation, and ensure
 \end{enumerate}
-
+\chapter{File Carving}
+Tim Lanzinger, Tim Schulze
+\section{Main goal and role of recovering lost files / meta data}
+The main goal of digital forensics is to uncover and investigate digital evidence related to cybercrime or other computer-related incidents. This can involve the analysis of computer systems, networks, digital devices, and data storage media to collect and analyze digital evidence.
+\\\linebreak File carving is a typical example of the work of a digital forensics expert. It involves the extraction of data from a file or storage media that has been damaged, corrupted, or intentionally deleted. File carving uses specialized software tools to search for and extract individual files or fragments of files from the raw data on a storage device, even if they have been partially overwritten or are otherwise inaccessible through conventional methods.
+\\\linebreak Recovering lost files is an essential part of digital forensics investigations. In many cases, digital evidence may be intentionally deleted or hidden by an attacker or suspect. Recovering lost files can provide valuable evidence for identifying the perpetrator or understanding the sequence of events leading up to an incident. Forensic experts may use a variety of techniques, including file carving, to recover lost files.
+\\\linebreak Metadata, such as creation date, last modification date, and location data, can also play an important role in digital forensics investigations. This information can help investigators to determine when a file was created, modified, or accessed, and can provide insight into the activities of the user or device in question. Location data, such as GPS coordinates contained in image files, can also provide important contextual information about a crime scene or the movements of a suspect. Forensic experts carefully analyze metadata to build a comprehensive timeline of events and reconstruct the sequence of digital activity related to a case.
+\section{Directory Table and FAT}
+In a FAT (File Allocation Table) file system, the directory table and file allocation table (FAT) are critical components that keep track of the files and their location on the storage media.
+\\\newline a) After a file is deleted from a FAT file system, the directory entry for the file is marked as deleted, but the actual data for the file may still be present on the disk until it is overwritten by new data. The FAT entry for the deleted file is also marked as available, indicating that the clusters previously allocated to the file are now free for reuse.
+\\\newline b) When a FAT file system is re-formatted using quick formatting, the directory table and FAT are recreated, and all existing data is erased. Quick formatting only deletes the directory table and FAT, but does not overwrite the actual data on the disk. Therefore, the data from the previous files may still be recoverable using data recovery tools until it is overwritten by new data.
+\\After the re-formatting, the directory table and the FAT will appear as if they are blank or initialized with all entries marked as available for use. This can cause problems for data recovery since there may not be any metadata available to indicate the original file names, locations, and sizes. In addition, the quick format does not check for bad sectors, so any existing bad sectors will remain unmarked and could cause problems in the future.
+\section{How file carving recovers}
+File carving is a technique used by digital forensic experts to recover deleted files or lost data from a storage media. In the case of a FAT file system, file carving can be used to recover deleted files from the clusters that were previously allocated to them in the file allocation table (FAT).
+\\\newline a) When a file is deleted from a FAT file system, the clusters that were previously allocated to it are marked as available for reuse, but the actual data may still exist on the disk until it is overwritten by new data. File carving software can scan the disk for these clusters and try to reconstruct the original file based on the available data fragments. The software looks for the headers and footers of file types, such as .docx, .pdf, .jpg, etc., and reconstructs the file based on the fragments that are found.
+\\\newline b) When a FAT file system is re-formatted using quick formatting, the directory table and FAT are recreated, and all existing data is erased. However, file carving can still be used to recover deleted files in this scenario if the data has not been overwritten by new data. The software scans the disk for the data fragments that belong to the file type being recovered and attempts to piece them together into a recognizable file. The recovered file may not have its original name or file attributes, but the content should still be intact.
+\section{Why you cannot expect file carving to recover all lost files}
+File carving is a powerful technique used to recover deleted or lost files from a storage device. However, in practice, it is not always possible to recover all the lost files using file carving. This is because of several reasons such as fragmentation, partial overwriting, defective sectors, quick formatting, and deep formatting.
+\begin{itemize}
+\item Fragmentation: When a file is saved to a storage device, it may be fragmented, i.e., it may be saved in several non-contiguous locations on the disk. In such a case, file carving may only be able to recover parts of the file, but not the entire file.
+\item Partial overwriting: If a file is deleted, but some parts of it are overwritten by new data, file carving may only be able to recover the remaining parts of the file, but not the overwritten parts. This can result in an incomplete or corrupted file.
+\item Defective sectors: If there are defective sectors on the storage device, file carving may not be able to recover the data stored in those sectors, resulting in an incomplete or corrupted file.
+\item Quick formatting: Quick formatting does not actually erase the data on the storage device, but only deletes the file system structures. If the storage device is subsequently used to store new data, the new data may overwrite the old data, making it impossible to recover.
+\item Deep formatting: Deep formatting erases all the data on the storage device, including the file system structures. In such a case, file carving may not be able to recover any of the lost data.
+\end{itemize}
+In summary, file carving is a powerful technique, but it has its limitations. The success of file carving depends on several factors, including the extent of data loss or damage, the fragmentation of files, the presence of defective sectors, and the type of formatting used. Therefore, it is important to use file carving in combination with other data recovery techniques to maximize the chances of successful data recovery.
+\section{Labreport}
+\subsection{Capture the Flag}
+First you need to carve for data. For that we used DiskDigger. Now you can Scan the whole Disk(image).
+You can also use Recuva, for what you need a mounted drive to function.
+\begin{enumerate}
+\item Whats the name of the Captain? Is the being intelligent?
+.wav-Datei: Name = Jean Luce Picard. Being is intelligent
+\item What would Ricky never do?
+Never ever give you up. Viewed file with HxD, which allows you to see the file jpg in end marker(FFD9).
+\\\includegraphics[width=0.75\textwidth]{"graphics/hdx"}
+\item After an Xtensive search, you need to find out which key has a creation date. Name the creation date and the corresponding key!
+Unsure about solution.
+%The file 09.jpg has an CreateDate = 06.01.2001
+%This is found with Exif-Tool. This shows you all Metadata of the file.
+\item Someone shot the shark! What type of Canon did he use?
+He used a Canon EOS 20D. This is from the Meta-Information from the image, extracted with ExifTool.
+\item Theres a famous broom hidden inside of all this mess and he has a message for us! What font did she use to type this message? the message? Was it all a test? Extracted from Powerpoint-File:
+Font = Nimbus Roman 9L, but it was shown as "Times New Roman", because this is the default font. Message = "I AM A PRETTY GIRL". The headline says that it is a test.
+\item Someone is riding on something, what a cool video! Whats his name and on what is he riding? His name is Joe and he is riding a surfboard. (Seen in the .wmv-File)
+\item How many observations were necessary to proof, that he excels at it? Extracted from the Excel-File: There were 10 observations.
+\item Theres science in there! Whats the title and who wrote it (2 scientists)? Extracted from PDF: Title = "Prudent Engineering Practice for Cryptographic Protocols", Authors = Martin Abadi, Roger Needham.
+\item More science! Whats the first name of this good man and the rest of his fellow scientists
+(3 scientists)? "Joshua", "Jonathan", "F. Javier"
+\end{enumerate}
+\section{Discussion}
+We used two different file carving tools, which there are "DiskDigger" and "Recuva". DiskDigger can carve any files, but Recuva needs a mounted Harddrive to be able to scan it. DiskDigger was also not able to find a deleted file, but Recuva did.
+\section{Summary}
+In this meeting, we discussed digital forensics, file carving, and the limitations of file carving in recovering lost files from a storage device.
+\\We started by discussing the main goal of digital forensics and how file carving is a typical example of the work of a forensic expert. We also talked about the role of recovering lost files and the importance of metadata, such as creation date, last modification date, and GPS coordinates, in digital forensics investigations.
+\\Next, we discussed how the directory table and file allocation table in a FAT file system look like after a file is deleted and after the file system is reformatted. We learned that file carving can be used to recover deleted files by scanning the disk for data fragments and reconstructing the file based on the available data.
+\\Finally, we discussed the limitations of file carving, such as the effects of fragmentation, partial overwriting, defective sectors, quick formatting, and deep formatting on the success of data recovery. We learned that file carving is not always successful in recovering lost files, and it is important to use other data recovery techniques in combination with file carving to maximize the chances of successful data recovery.
+\\\newline Personal opinion: Files which seem to be lost, are not always lost. They can still be restored, even if small portions of them have been overwritten with other data. JPG-files with an artificially placed end marker (FF D9) can be recovered, and even if a small portion of the image has been overwritten, the image can be recovered with some color distortions (See screenshot). A device, which seemingly has been destroyed, can still have data extracted from it. If I ever find myself in a situation, where I have to recover data which has been deleted or overwritten, I now know which tools to use and how to restore valuable data.
+\\\includegraphics[width=0.8\textwidth]{"graphics/thu"}
 \end{document}
 
 %\includegraphics[width=1\textwidth]{"graphics/"}

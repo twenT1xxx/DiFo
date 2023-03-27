@@ -10,5 +10,14 @@
 \contentsline {section}{\numberline {1.7}Problems with Computer Forensic Evidence}{6}{section.1.7}%
 \contentsline {section}{\numberline {1.8}The Forensic Technican}{7}{section.1.8}%
 \contentsline {section}{\numberline {1.9}Subject Matter of Computer Forensics}{7}{section.1.9}%
-\contentsline {chapter}{\numberline {2}Questions}{8}{chapter.2}%
+\contentsline {section}{\numberline {1.10}Questions}{8}{section.1.10}%
+\contentsline {chapter}{\numberline {2}File Carving}{10}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Main goal and role of recovering lost files / meta data}{10}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Directory Table and FAT}{10}{section.2.2}%
+\contentsline {section}{\numberline {2.3}How file carving recovers}{11}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Why you cannot expect file carving to recover all lost files}{11}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Labreport}{12}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Capture the Flag}{12}{subsection.2.5.1}%
+\contentsline {section}{\numberline {2.6}Discussion}{14}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Summary}{14}{section.2.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
