@@ -31,7 +31,10 @@
 \addtocontents{toc}{~\hfill\textbf{Seite}\par}
 \pagebreak
 \pagenumbering{arabic}
+
+
 \chapter{Computer Crime Scene Investigation}
+
 \section{Introduction to Digital Forensics}
 Computer forensics, also referred to as computer forensic analysis, electronic discovery, electronic evidence discovery, digital discovery, data recovery, data discovery, computer analysis, and computer examination, is the process of methodically examining computer media (hard disks, diskettes, tapes, etc.) for evidence. A thorough analysis by a skilled examiner can result in the reconstruction of the activities of a computer user.
 \\In other words, Computer forensics is the collection, preservation, analysis, and presentation of computer-related evidence. 
@@ -44,6 +47,7 @@ The process of acquiring, examining, and applying digital evidence is crucialto 
 \end{itemize}
 The objective in computer forensics is to recover, analyze, and present computer-based material in such a way that it is \textbf{useable as evidence in a court of law}. 
 \\Priority: Accuracy $>$ Speed, but efficiently as possible (adhere to stringent guidelines)
+
 \section{Roles of Computer in a Crime}
 A computer can be:
 \begin{itemize}
@@ -51,6 +55,7 @@ A computer can be:
 \item it can be the instrument of the crime (look for password cracking software and password files)
 \item it can serve as an evidence repository storing valuable information about the crime
 \end{itemize}
+
 \section{Computer Forensics Specialist(Procedure sequence)}
 \begin{enumerate}
 \item Protect the subject computer system during the forensic examination from any possible alteration, damage, data corruption, or virus introduction
@@ -62,6 +67,7 @@ A computer can be:
 \item Print out an overall analysis of the subject computer system, as well as a listing of all possibly relevant files and discovered file data. Further, provide an opinion of the system layout; the file structures discovered; any discovered data and authorship information; any attempts to hide, delete, protect, or encrypt information; and anything else that has been discovered and appears to be relevant to the overall computer system examination.
 \item Provide expert consultation and/or testimony
 \end{enumerate}
+
 \section{Use of Computer Forensic Evidence}
 \begin{itemize}
 \item Criminal Prosecutors(Strafrechtliche Staatsanwälte): homicides, financial fraud, drug and embezzlement record-keeping, and child pornography
@@ -71,6 +77,7 @@ A computer can be:
 preparations and post-seizure handling of the computer equipment
 \item Individuals: hire computer forensics specialists in support of possible claims of wrongful termination, sexual harassment, or age discrimination (electronic mail systems, on network servers, and on individual employee’s computers)
 \end{itemize}
+
 \section{Use of Computer Forensics in Law Enforcement}
 If there is a computer on the premises of a crime scene, the chances are very good that
 there is valuable evidence on that computer. If the computer and its contents are examined (even if very briefly) by anyone other than a trained and experienced computer
@@ -98,6 +105,7 @@ businesses
 \item That many people keep their financial records, including investments, on
 computers
 \end{itemize}
+
 \section{Computer Forensic Services}
 \begin{itemize}
 \item Data seizure(Beschlagnahme)
@@ -130,6 +138,7 @@ computers
 \item Fast turnaround time
 \end{itemize}
 \end{itemize}
+
 \section{Problems with Computer Forensic Evidence}
 Computer evidence is like any other evidence. It must be:
 \begin{itemize}
@@ -147,6 +156,7 @@ The processes of opening a file or printing it out are not always neutral.
 \item Computer and telecommunications technologies are always changing so that
 forensic processes can seldom be fixed for very long [5].
 \end{itemize}
+
 \section{The Forensic Technican}
 standard disk repair, network testing
 \begin{itemize}
@@ -165,6 +175,7 @@ track all the investigations carried out by the prosecution’s experts [5].
 \item A sound knowledge of legal procedures
 \item Access to and skill in the use of appropriate utilities [5]
 \end{itemize}
+
 \section{Subject Matter of Computer Forensics}
 \begin{itemize}
 \item Authenticity: Does the material come from where it purports?
@@ -177,6 +188,7 @@ legal dispute or hearing
 \item Freedom from interference and contamination: Are these levels acceptable as
 a result of forensic investigation and other post-event handling?
 \end{itemize}
+
 \section{Questions}
 \begin{enumerate}
 \item  Why are information systems (“computer at crime sites”) significant for law enforcement and criminal prosecution? 
@@ -206,22 +218,28 @@ The main problems, challenges, and limitations of a Forensics examination can in
 
 "Forensics Readiness" refers to the ability of an organization to prepare for and respond to digital incidents or data breaches in a forensically sound manner. To achieve Forensics Readiness, organizations must develop policies and procedures for incident response and data preservation, and ensure
 \end{enumerate}
+
+
 \chapter{File Carving}
 Tim Lanzinger, Tim Schulze
+
 \section{Main goal and role of recovering lost files / meta data}
 The main goal of digital forensics is to uncover and investigate digital evidence related to cybercrime or other computer-related incidents. This can involve the analysis of computer systems, networks, digital devices, and data storage media to collect and analyze digital evidence.
 \\\linebreak File carving is a typical example of the work of a digital forensics expert. It involves the extraction of data from a file or storage media that has been damaged, corrupted, or intentionally deleted. File carving uses specialized software tools to search for and extract individual files or fragments of files from the raw data on a storage device, even if they have been partially overwritten or are otherwise inaccessible through conventional methods.
 \\\linebreak Recovering lost files is an essential part of digital forensics investigations. In many cases, digital evidence may be intentionally deleted or hidden by an attacker or suspect. Recovering lost files can provide valuable evidence for identifying the perpetrator or understanding the sequence of events leading up to an incident. Forensic experts may use a variety of techniques, including file carving, to recover lost files.
 \\\linebreak Metadata, such as creation date, last modification date, and location data, can also play an important role in digital forensics investigations. This information can help investigators to determine when a file was created, modified, or accessed, and can provide insight into the activities of the user or device in question. Location data, such as GPS coordinates contained in image files, can also provide important contextual information about a crime scene or the movements of a suspect. Forensic experts carefully analyze metadata to build a comprehensive timeline of events and reconstruct the sequence of digital activity related to a case.
+
 \section{Directory Table and FAT}
 In a FAT (File Allocation Table) file system, the directory table and file allocation table (FAT) are critical components that keep track of the files and their location on the storage media.
 \\\newline a) After a file is deleted from a FAT file system, the directory entry for the file is marked as deleted, but the actual data for the file may still be present on the disk until it is overwritten by new data. The FAT entry for the deleted file is also marked as available, indicating that the clusters previously allocated to the file are now free for reuse.
 \\\newline b) When a FAT file system is re-formatted using quick formatting, the directory table and FAT are recreated, and all existing data is erased. Quick formatting only deletes the directory table and FAT, but does not overwrite the actual data on the disk. Therefore, the data from the previous files may still be recoverable using data recovery tools until it is overwritten by new data.
 \\After the re-formatting, the directory table and the FAT will appear as if they are blank or initialized with all entries marked as available for use. This can cause problems for data recovery since there may not be any metadata available to indicate the original file names, locations, and sizes. In addition, the quick format does not check for bad sectors, so any existing bad sectors will remain unmarked and could cause problems in the future.
+
 \section{How file carving recovers}
 File carving is a technique used by digital forensic experts to recover deleted files or lost data from a storage media. In the case of a FAT file system, file carving can be used to recover deleted files from the clusters that were previously allocated to them in the file allocation table (FAT).
 \\\newline a) When a file is deleted from a FAT file system, the clusters that were previously allocated to it are marked as available for reuse, but the actual data may still exist on the disk until it is overwritten by new data. File carving software can scan the disk for these clusters and try to reconstruct the original file based on the available data fragments. The software looks for the headers and footers of file types, such as .docx, .pdf, .jpg, etc., and reconstructs the file based on the fragments that are found.
 \\\newline b) When a FAT file system is re-formatted using quick formatting, the directory table and FAT are recreated, and all existing data is erased. However, file carving can still be used to recover deleted files in this scenario if the data has not been overwritten by new data. The software scans the disk for the data fragments that belong to the file type being recovered and attempts to piece them together into a recognizable file. The recovered file may not have its original name or file attributes, but the content should still be intact.
+
 \section{Why you cannot expect file carving to recover all lost files}
 File carving is a powerful technique used to recover deleted or lost files from a storage device. However, in practice, it is not always possible to recover all the lost files using file carving. This is because of several reasons such as fragmentation, partial overwriting, defective sectors, quick formatting, and deep formatting.
 \begin{itemize}
@@ -232,6 +250,7 @@ File carving is a powerful technique used to recover deleted or lost files from 
 \item Deep formatting: Deep formatting erases all the data on the storage device, including the file system structures. In such a case, file carving may not be able to recover any of the lost data.
 \end{itemize}
 In summary, file carving is a powerful technique, but it has its limitations. The success of file carving depends on several factors, including the extent of data loss or damage, the fragmentation of files, the presence of defective sectors, and the type of formatting used. Therefore, it is important to use file carving in combination with other data recovery techniques to maximize the chances of successful data recovery.
+
 \section{Labreport}
 \subsection{Capture the Flag}
 First you need to carve for data. For that we used DiskDigger. Now you can Scan the whole Disk(image).
@@ -256,8 +275,10 @@ Font = Nimbus Roman 9L, but it was shown as "Times New Roman", because this is t
 \item More science! Whats the first name of this good man and the rest of his fellow scientists
 (3 scientists)? "Joshua", "Jonathan", "F. Javier"
 \end{enumerate}
+
 \section{Discussion}
 We used two different file carving tools, which there are "DiskDigger" and "Recuva". DiskDigger can carve any files, but Recuva needs a mounted Harddrive to be able to scan it. DiskDigger was also not able to find a deleted file, but Recuva did.
+
 \section{Summary}
 In this meeting, we discussed digital forensics, file carving, and the limitations of file carving in recovering lost files from a storage device.
 \\We started by discussing the main goal of digital forensics and how file carving is a typical example of the work of a forensic expert. We also talked about the role of recovering lost files and the importance of metadata, such as creation date, last modification date, and GPS coordinates, in digital forensics investigations.
@@ -265,6 +286,51 @@ In this meeting, we discussed digital forensics, file carving, and the limitatio
 \\Finally, we discussed the limitations of file carving, such as the effects of fragmentation, partial overwriting, defective sectors, quick formatting, and deep formatting on the success of data recovery. We learned that file carving is not always successful in recovering lost files, and it is important to use other data recovery techniques in combination with file carving to maximize the chances of successful data recovery.
 \\\newline Personal opinion: Files which seem to be lost, are not always lost. They can still be restored, even if small portions of them have been overwritten with other data. JPG-files with an artificially placed end marker (FF D9) can be recovered, and even if a small portion of the image has been overwritten, the image can be recovered with some color distortions (See screenshot). A device, which seemingly has been destroyed, can still have data extracted from it. If I ever find myself in a situation, where I have to recover data which has been deleted or overwritten, I now know which tools to use and how to restore valuable data.
 \\\includegraphics[width=0.8\textwidth]{"graphics/thu"}
+
+
+\chapter{Legal Restrictions}
+Tim Lanzinger, Tim Schulze
+
+\section{Introduction}
+The knowledge of legal framework is essential for digital forensics (DF) as it ensures that forensic examiners comply with legal restrictions when performing examinations. Failure to comply with these legal restrictions can result in evidence being deemed inadmissible in court, which could potentially jeopardize the outcome of a case. Furthermore, digital forensic experts need to know about crimes that could be committed to identify relevant digital evidence.
+\\\\One of the most important legal restrictions applicable to forensic examinations is the admissibility of evidence. Digital evidence must meet certain legal requirements to be admissible in court, including the Frye and Daubert standards. Additionally, the chain of custody must be properly documented and maintained to preserve the integrity of the evidence.
+\\\linebreak Another important legal restriction is search and seizure. Digital forensic experts must follow proper procedures when conducting searches and seizures to ensure that the evidence obtained is admissible in court. This includes obtaining proper warrants and ensuring that the search is conducted within the scope of the warrant.
+\\\linebreak To comply with the legal framework in practice, digital forensic experts should document all procedures and steps taken during the examination process. This includes documenting the chain of custody, the tools and techniques used, and any other relevant information related to the examination. Digital forensic experts should also obtain informed consent from the owner or custodian of the digital device or storage media.
+\\\linebreak A contract between the digital forensic expert and the client is also essential to ensure that both parties understand their rights and obligations. The contract should include the scope of the examination, the fees, and the responsibilities of each party. The contract should also include provisions related to confidentiality and the handling of sensitive information.
+\\\linebreak In summary, compliance with legal restrictions is essential in digital forensics, and failure to comply can result in evidence being deemed inadmissible in court. Proper documentation, informed consent, and contractual agreements are important tools for ensuring compliance and protecting the rights of all parties involved.
+
+\section{Overview of Relevant Laws}
+\subsection{Criminal Code}
+The criminal code outlines laws related to illegal activities, such as theft, fraud, and hacking. Digital forensic experts need to be aware of these laws to identify relevant evidence and ensure that they are not violating any laws themselves during the examination process.
+\subsection{Corporate Law}
+Corporate law outlines the legal requirements for businesses and organizations. Digital forensic experts may be called upon to investigate corporate fraud or other illegal activities within a company. Understanding corporate law is essential for identifying relevant evidence and ensuring that the investigation complies with legal requirements.
+\subsection{Personal Rights}
+Personal rights laws protect individuals from invasion of privacy and other violations. Digital forensic experts must be aware of these laws to ensure that their examination procedures do not violate the privacy rights of individuals.
+\subsection{Intellectual Property}
+Intellectual property laws protect the rights of creators and owners of intellectual property, such as patents, trademarks, and copyrights. Digital forensic experts may be called upon to investigate cases related to intellectual property theft, and they must be familiar with these laws to identify relevant evidence and ensure that the investigation complies with legal requirements.
+\subsection{Copyright}
+Copyright laws protect the rights of creators and owners of original works, such as books, music, and movies. Digital forensic experts may be called upon to investigate cases related to copyright infringement, and they must be familiar with these laws to identify relevant evidence and ensure that the investigation complies with legal requirements.
+\subsection{Privacy and Data Protection}
+Privacy and data protection laws regulate the collection, use, and storage of personal data. Digital forensic experts must be aware of these laws to ensure that the examination procedures comply with legal requirements and do not violate the privacy rights of individuals.
+\\\linebreak In summary, digital forensic experts need to be familiar with a variety of laws and legal requirements related to their work. Each of these laws and standards plays an important role in ensuring that forensic examinations are conducted ethically and legally. By understanding these laws and standards, digital forensic experts can identify relevant evidence, comply with legal requirements, and protect the rights of all parties involved.
+\section{Risk and Considerations in DF Examinations}
+In this section, we will discuss the potential risks and considerations that DF experts should be aware of when conducting examinations. One important aspect to consider is the risk of infringing on laws while collecting and analyzing data. DF experts must be aware of the legal restrictions and must avoid any actions that may violate them.
+\\\linebreak Two specific actions that should be avoided are making IT systems or data unavailable (denial-of-service) and modifying data. Both of these actions can reduce the availability of the data and destroy potential evidence. It is important for DF experts to follow the correct procedures for collecting and analyzing data to ensure that the evidence is preserved and admissible in court.
+\\\linebreak In summary, DF experts should be aware of the potential risks and legal restrictions when conducting examinations. They must adhere to the correct procedures and avoid any actions that may infringe on the law or destroy evidence.
+\section{DF and ISO27k}
+Digital Forensics (DF) experts can benefit from implementing the guidelines and best practices outlined in the ISO 27000 series of standards, which provide a comprehensive framework for information security management. By using these standards, DF experts can ensure that they are following industry best practices for protecting sensitive information and conducting investigations in a secure and reliable manner.
+\\\linebreak ISO 27001 provides a framework for implementing an Information Security Management System (ISMS), which includes policies, procedures, and controls for managing sensitive information. DF experts can use this standard to ensure that they are following best practices and guidelines for conducting investigations while protecting sensitive information.
+\\\linebreak One of the best practices due to ISMS is to improve the log level, store logs safely, and support the reporting of logs. This can be achieved by implementing security controls, monitoring and controlling access to data, and conducting regular risk assessments.
+\\\linebreak DF experts can also benefit from other ISO 27000 standards such as ISO 27002, which provides guidelines for information security management, and ISO 27035, which provides a framework for incident management. These standards can help DF experts to implement best practices for protecting sensitive information and responding to incidents during investigations.
+\\\linebreak In summary, implementing the guidelines and best practices outlined in the ISO 27000 series of standards can help DF experts to conduct investigations in a secure and reliable manner while protecting sensitive information.
+
+\section{Impacts and resulting measurements}
+DF experts must ensure that they are complying with all applicable laws and regulations when performing forensic examinations. This includes obtaining written permission from the owner of the IT system or data to be examined, as well as ensuring that the security and privacy of any data obtained during the examination is protected.
+\\\linebreak One important measure that should be taken is to have a written contract in place with the owner of the IT system or data that outlines the permissions and limitations of the examination. The contract should contain specific language related to the relevant laws and regulations, such as the Criminal Code and GDPR. For example, the contract should include language that ensures compliance with Section 203 of the Criminal Code, which prohibits the unauthorized disclosure of confidential information, and Section 32 of the GDPR, which mandates the use of appropriate security measures when processing personal data.
+\\\linebreak DF experts must also be aware of the limitations of their authority and never attempt to hack into systems without prior permission. This includes cracking passwords or using other hacking tools to bypass access controls. Additionally, DF experts must never harm the availability of IT systems or data during the examination process.
+\\\linebreak When performing forensic examinations, it is important to always work on images of the IT system or data if applicable. This ensures that the original data is preserved and protected, and any examination or analysis is conducted on a copy of the data.
+\\\linebreak Finally, DF experts must never copy sensitive data for personal use or publish it, even if it is discovered during the examination process. All data obtained during an examination must be kept strictly confidential and only used for the purposes of the examination.
+\\\linebreak By adhering to these measures, DF experts can ensure that they are complying with all applicable laws and regulations, and that they are conducting forensic examinations in a manner that is ethical and respectful of the rights and privacy of all parties involved.
 \end{document}
 
 %\includegraphics[width=1\textwidth]{"graphics/"}

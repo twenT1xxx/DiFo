@@ -20,4 +20,16 @@
 \contentsline {subsection}{\numberline {2.5.1}Capture the Flag}{12}{subsection.2.5.1}%
 \contentsline {section}{\numberline {2.6}Discussion}{14}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Summary}{14}{section.2.7}%
+\contentsline {chapter}{\numberline {3}Legal Restrictions}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{15}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Overview of Relevant Laws}{16}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Criminal Code}{16}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Corporate Law}{16}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Personal Rights}{16}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Intellectual Property}{16}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Copyright}{16}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Privacy and Data Protection}{16}{subsection.3.2.6}%
+\contentsline {section}{\numberline {3.3}Risk and Considerations in DF Examinations}{17}{section.3.3}%
+\contentsline {section}{\numberline {3.4}DF and ISO27k}{17}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Impacts and resulting measurements}{18}{section.3.5}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.27)  27 MAR 2023 17:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.12) (preloaded format=pdflatex 2023.1.27)  23 APR 2023 17:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -852,100 +852,189 @@ chapter 1.
 [1
 
 ] [2]
-<graphics/expertwitnesservices.png, id=76, 523.9575pt x 596.2275pt>
+<graphics/expertwitnesservices.png, id=88, 523.9575pt x 596.2275pt>
 File: graphics/expertwitnesservices.png Graphic file (type png)
 <use graphics/expertwitnesservices.png>
 Package pdftex.def Info: graphics/expertwitnesservices.png  used on input line 
-109.
+117.
 (pdftex.def)             Requested size: 418.25555pt x 475.9546pt.
-<graphics/electronicsurveillance.png, id=78, 386.94562pt x 539.76656pt>
+<graphics/electronicsurveillance.png, id=90, 386.94562pt x 539.76656pt>
 File: graphics/electronicsurveillance.png Graphic file (type png)
 <use graphics/electronicsurveillance.png>
 Package pdftex.def Info: graphics/electronicsurveillance.png  used on input lin
-e 110.
+e 118.
 (pdftex.def)             Requested size: 418.25555pt x 583.44984pt.
 
-Overfull \hbox (27.37506pt too wide) in paragraph at lines 108--111
+Overfull \hbox (27.37506pt too wide) in paragraph at lines 116--119
 [] 
  []
 
 
-Overfull \hbox (27.37506pt too wide) in paragraph at lines 108--111
+Overfull \hbox (27.37506pt too wide) in paragraph at lines 116--119
 [] 
  []
 
 [3] [4 <./graphics/expertwitnesservices.png>] [5 <./graphics/electronicsurveill
 ance.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 140--142
+Underfull \hbox (badness 10000) in paragraph at lines 149--151
 
  []
 
 [6] [7] [8] [9]
 chapter 2.
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--216
+Underfull \hbox (badness 10000) in paragraph at lines 227--231
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--216
+Underfull \hbox (badness 10000) in paragraph at lines 227--231
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 212--216
+Underfull \hbox (badness 10000) in paragraph at lines 227--231
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--221
+Underfull \hbox (badness 10000) in paragraph at lines 233--237
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--221
+Underfull \hbox (badness 10000) in paragraph at lines 233--237
 
  []
 
 [10
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 222--225
+Underfull \hbox (badness 10000) in paragraph at lines 239--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--225
+Underfull \hbox (badness 10000) in paragraph at lines 239--242
 
  []
 
 [11]
-<graphics/hdx.png, id=133, 836.12375pt x 673.51625pt>
+<graphics/hdx.png, id=145, 836.12375pt x 673.51625pt>
 File: graphics/hdx.png Graphic file (type png)
 <use graphics/hdx.png>
-Package pdftex.def Info: graphics/hdx.png  used on input line 244.
+Package pdftex.def Info: graphics/hdx.png  used on input line 263.
 (pdftex.def)             Requested size: 313.69167pt x 252.6913pt.
  [12] [13 <./graphics/hdx.png>]
-<graphics/thu.png, id=153, 1299.85625pt x 538.01pt>
+<graphics/thu.png, id=165, 1299.85625pt x 538.01pt>
 File: graphics/thu.png Graphic file (type png)
 <use graphics/thu.png>
-Package pdftex.def Info: graphics/thu.png  used on input line 267.
+Package pdftex.def Info: graphics/thu.png  used on input line 288.
 (pdftex.def)             Requested size: 334.60571pt x 138.49191pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 262--268
+Underfull \hbox (badness 10000) in paragraph at lines 283--289
 
  []
 
-[14 <./graphics/thu.png>] (DiFo.aux)
+[14 <./graphics/thu.png>]
+chapter 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--301
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--301
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--301
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--301
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--301
+
+ []
+
+[15
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 314--316
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 317--320
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 317--320
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--326
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--326
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--326
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 321--326
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 328--334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 328--334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 328--334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 328--334
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 328--334
+
+ []
+
+[18] (DiFo.aux)
 Package rerunfilecheck Info: File `DiFo.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 25028 strings out of 476404
- 488374 string characters out of 2789524
- 1859324 words of memory out of 3000000
- 44811 multiletter control sequences out of 15000+600000
- 524861 words of font info for 129 fonts, out of 8000000 for 9000
+ 25056 strings out of 476404
+ 488640 string characters out of 2789524
+ 1860324 words of memory out of 3000000
+ 44817 multiletter control sequences out of 15000+600000
+ 525014 words of font info for 132 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  108i,7n,106p,10622b,596s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\timsc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
@@ -955,9 +1044,9 @@ ic/amsfonts/cm/cmmi10.pfb><C:/Users/timsc/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/public/amsfonts/cm/cmr10.pfb><C:/Users/timsc/AppData/Local/Programs/MiKTeX
 /fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/timsc/AppData/Local/Program
 s/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on DiFo.pdf (16 pages, 1611220 bytes).
+Output written on DiFo.pdf (20 pages, 1627453 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
- 68 named destinations out of 1000 (max. 500000)
- 26809 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 315 PDF objects out of 1000 (max. 8388607)
+ 84 named destinations out of 1000 (max. 500000)
+ 26857 words of extra memory for PDF output out of 29859 (max. 10000000)
 
